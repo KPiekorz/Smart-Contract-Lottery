@@ -1,3 +1,5 @@
+Fix brownie import: https://stackoverflow.com/questions/70544310/import-brownie-could-not-be-resolved-in-pylance
+
 
 1. User can enter lottery with ETH based on a USD fee
 2. An admin will choose when the lottery is over
