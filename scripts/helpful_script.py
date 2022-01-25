@@ -10,7 +10,7 @@ from brownie import (
     interface
 )
 
-FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev"]
+FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev", "rinkeby-fork"]
 LOCAL_BLOCKCHAIN_ENVIROMENTS = ["development", "ganache-local"]
 
 def get_account(index=None, id=None):
