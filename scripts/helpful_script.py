@@ -13,7 +13,7 @@ from brownie import (
 FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev", "rinkeby-fork"]
 LOCAL_BLOCKCHAIN_ENVIROMENTS = ["development", "ganache-local"]
 
-def get_account(index=None, id=None):
+def  get_account(index=None, id=None):
 
     if index:
         return accounts[index]
@@ -58,11 +58,12 @@ def get_contract(contract_name):
         contract = contract_type[-1]
     else:
         contract_address = config["networks"][network.show_active()][contract_name]
+        # address
+        # ABI
         contract = Contract.from_abi(
-            contract_type.name, 
-            contract_address,
-            contract_type.abi
+            contract_type._name, contract_address, contract_type.abi
         )
+        # MockV3Aggregator.abi
     return contract
 
 DECIMALS = 8
